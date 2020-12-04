@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 1175px;
+	height: 725px;
+	background-image: url(stage.png);
+	margin: auto auto;
+	position: relative;
+}
+
+.duck{
+	position: absolute;
+	left: 450px;
+	top: 250px;
+}
