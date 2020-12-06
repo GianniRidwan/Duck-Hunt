@@ -60,3 +60,20 @@ function fly(){
 setInterval(function(){
 	fly();
 },500);
+
+
+var hit = document.getElementById("hit");
+var miss = document.getElementById("miss");
+var container = document.getElementById("container");
+
+var count1 = 1;
+var count2 = 1;
+
+duck.addEventListener("click", function(){
+	hit.innerHTML = "HIT: " + count1++;
+});
+
+container.addEventListener("click", function(){
+	miss.innerHTML = "MISS: " + count2++;
+});
+
