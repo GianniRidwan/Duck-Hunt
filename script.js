@@ -71,9 +71,23 @@ var count2 = 1;
 
 duck.addEventListener("click", function(){
 	hit.innerHTML = "HIT: " + count1++;
+	miss.innerHTML = "MISS: " + count2--;
+	var posLeft = 450;
+	var posTop = 250;
+	document.getElementById("duck").style.left = posLeft + "px";
+	document.getElementById("duck").style.top = posTop + "px";
+	if(count1 == 21){
+	alert("You won!");
+};
 });
 
 container.addEventListener("click", function(){
 	miss.innerHTML = "MISS: " + count2++;
+	var posLeft = 450;
+	var posTop = 250;
+	document.getElementById("duck").style.left = posLeft + "px";
+	document.getElementById("duck").style.top = posTop + "px";
+	if(count2 == 21){
+	alert("You lost!");
+};
 });
-
